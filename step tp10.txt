@@ -1,0 +1,13 @@
+MODELS
+- BD
+- Temporada
+- Serie
+- Actor
+CONTROLLERS
+- Cargar info index
+- Pasar actores/ pasar temps / pasar serie
+VIEWS 
+- Index con botones que abran cards
+
+SITE
+scriptJS

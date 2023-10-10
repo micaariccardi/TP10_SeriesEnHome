@@ -14,4 +14,6 @@ public class Serie
         sinopsis = sin;
         imagenSerie = image;
     }
+
+    Serie(){}
 }

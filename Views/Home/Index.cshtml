@@ -3,6 +3,19 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">LuminiSeries</h1>
+    <p>Descubre el brillo de las historias en pantalla</p>
+</div>
+<br>
+<div class = "card-series">
+    @foreach (var item in ViewBag.Series)
+    {
+        <div class="card" style="width: 18rem; margin-bottom: 2em;">
+            <img src="@item.imagenSerie" class="card-img-top" alt="portada de la serie">
+            <div class="card-body">
+                <h5 class="card-title">@item.nombre</h5>
+                <a href="#" class="btn btn-primary">Go somewhere</a> @* acá va toda la cosa loca del AJAX *@
+            </div>
+        </div>    
+    }
 </div>

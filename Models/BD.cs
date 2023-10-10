@@ -16,24 +16,24 @@ public static class BD
         return ListaSeries;
     }
 
-    public static List<Temporada> ObtenerTemporadas()
+    public static List<Temporada> ObtenerTemporadas(int idSerie)
     {
         List<Temporada> ListaTemporadas = new List<Temporada>();
         using(SqlConnection db = new SqlConnection(_connectionString))
         {
-            string sql = "SELECT * FROM Temporada";
-            ListaTemporadas = db.Query<Temporada>(sql).ToList();
+            string sql = "SELECT * FROM Temporada WHERE IdSerie = @pidSerie";
+            ListaTemporadas = db.Query<Temporada>(sql, new {pidSerie = idSerie}).ToList();
         }
         return ListaTemporadas;
     }
 
-    public static List<Actor> ObtenerActores()
+    public static List<Actor> ObtenerActores(int idSerie)
     {
         List<Actor> ListaActores = new List<Actor>();
         using(SqlConnection db = new SqlConnection(_connectionString))
         {
-            string sql = "SELECT * FROM Actor";
-            ListaActores = db.Query<Actor>(sql).ToList();
+            string sql = "SELECT * FROM Actor WHERE IdSerie = @pidSerie";
+            ListaActores = db.Query<Actor>(sql, new {pidSerie = idSerie}).ToList();
         }
         return ListaActores;
     }

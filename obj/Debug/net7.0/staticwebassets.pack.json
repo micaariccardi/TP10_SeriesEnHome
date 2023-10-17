@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\img\\brillitos.png"
     },
     {
+      "Id": "Z:\\2023\\Programación\\TP10_SeriesEnHome\\wwwroot\\img\\gilmore.PNG",
+      "PackagePath": "staticwebassets\\img\\gilmore.PNG"
+    },
+    {
       "Id": "Z:\\2023\\Programación\\TP10_SeriesEnHome\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

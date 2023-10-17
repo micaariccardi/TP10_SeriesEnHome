@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "21Nk49mFYHqmaz8rzECTQzQU89T3vYsOgIHZGmQDyuU=",
+  "Hash": "UDEf/+osmOlw0z9aGI5Se5Y7RQvr8BmFzfJQy5e4J0A=",
   "Source": "TP10_SeriesEnHome",
   "BasePath": "_content/TP10_SeriesEnHome",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\brillitos.png"
+    },
+    {
+      "Identity": "Z:\\2023\\Programación\\TP10_SeriesEnHome\\wwwroot\\img\\gilmore.PNG",
+      "SourceId": "TP10_SeriesEnHome",
+      "SourceType": "Discovered",
+      "ContentRoot": "Z:\\2023\\Programación\\TP10_SeriesEnHome\\wwwroot\\",
+      "BasePath": "_content/TP10_SeriesEnHome",
+      "RelativePath": "img/gilmore.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\gilmore.PNG"
     },
     {
       "Identity": "Z:\\2023\\Programación\\TP10_SeriesEnHome\\wwwroot\\js\\site.js",

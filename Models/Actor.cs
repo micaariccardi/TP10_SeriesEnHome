@@ -1,13 +1,15 @@
 public class Actor
 {
-    int idActor {get; set;}
-    int idSerie {get; set;}
-    string nombre {get;set;} 
+    public int idActor {get; set;}
+    public int idSerie {get; set;}
+    public string nombre {get;set;} 
 
-    Actor(int idA, int idS, string name)
+    public Actor(int idA, int idS, string name)
     {
         idActor = idA;
         idSerie = idS;
         nombre = name;
     }
+
+    public Actor(){}
 }

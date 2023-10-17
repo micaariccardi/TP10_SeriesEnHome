@@ -6,7 +6,7 @@ public class Serie
     public string sinopsis {get; set;}
     public string imagenSerie {get; set;}
 
-    Serie(int id, string name, int year, string sin, string image)
+    public Serie(int id, string name, int year, string sin, string image)
     {
         idSerie = id;
         nombre = name;
@@ -15,5 +15,5 @@ public class Serie
         imagenSerie = image;
     }
 
-    Serie(){}
+    public Serie(){}
 }

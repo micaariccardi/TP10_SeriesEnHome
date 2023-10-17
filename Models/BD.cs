@@ -37,4 +37,15 @@ public static class BD
         }
         return ListaActores;
     }
+
+    public static Serie ObtenerSerie(int idSerie)
+    {
+        Serie serie = new Serie();
+        using(SqlConnection db = new SqlConnection(_connectionString))
+        {
+            string sql = "SELECT * FROM Series WHERE IdSerie = @pidSerie";
+            serie = db.QueryFirstOrDefault<Serie>(sql, new {pidSerie = idSerie});
+        }
+        return serie;
+    }
 }

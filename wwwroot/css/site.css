@@ -19,6 +19,7 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-color: midnightblue;
 }
 
 nav img{
@@ -36,4 +37,32 @@ nav a{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.btn-primary
+{
+  font-size: small;
+}
+
+h1, h5, a, p{
+  color: aliceblue;
+}
+
+.card-body{
+  background-color: rgb(213, 231, 236);
+  border-color: rgb(213, 231, 236);
+}
+
+.btn{
+  background-color: midnightblue;
+  color: rgb(213, 231, 236);
+  border: none; 
+}
+
+.titulo{
+  color: aliceblue !important;
+}
+
+.modal-title{
+  color: midnightblue;
 }

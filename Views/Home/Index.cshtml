@@ -4,18 +4,37 @@
 
 <div class="text-center">
     <h1 class="display-4">LuminiSeries</h1>
-    <p>Descubre el brillo de las historias en pantalla</p>
+    <p>	&#10024; Descubre el brillo de las historias en pantalla 	&#10024;</p>
 </div>
 <br>
 <div class = "card-series">
-    @foreach (var item in ViewBag.Series)
+    @foreach (Serie item in ViewBag.Series)
     {
-        <div class="card" style="width: 18rem; margin-bottom: 2em;">
+        <div class="card" style="width: 19rem; margin-bottom: 2em;">
             <img src="@item.imagenSerie" class="card-img-top" alt="portada de la serie">
             <div class="card-body">
                 <h5 class="card-title">@item.nombre</h5>
-                <a href="#" class="btn btn-primary">Go somewhere</a> @* acá va toda la cosa loca del AJAX *@
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#InfoSeries" onclick="MostrarReparto(@item.idSerie)"> Reparto </button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#InfoSeries" onclick="MostrarTemporadas(@item.idSerie)"> Temporadas </button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#InfoSeries" onclick="MostrarInfo(@item.idSerie)"> Más info </button>
             </div>
         </div>    
     }
+</div>
+
+<div class="modal fade" id="InfoSeries" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="titulo"></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+            <div id="InfoModal"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
 </div>

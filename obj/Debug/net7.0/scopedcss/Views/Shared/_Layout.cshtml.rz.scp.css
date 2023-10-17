@@ -7,14 +7,15 @@ a.navbar-brand[b-gaz5zh1u1q] {
   word-break: break-all;
 }
 
+
 a[b-gaz5zh1u1q] {
   color: #0077cc;
 }
 
 .btn-primary[b-gaz5zh1u1q] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+  color: aliceblue; 
+  background-color: midnightblue;
+  border-color: aliceblue;
 }
 
 .nav-pills .nav-link.active[b-gaz5zh1u1q], .nav-pills .show > .nav-link[b-gaz5zh1u1q] {
@@ -45,4 +46,12 @@ button.accept-policy[b-gaz5zh1u1q] {
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
+}
+
+.bg-white[b-gaz5zh1u1q], .footer[b-gaz5zh1u1q]{
+  background-color: rgba(240, 248, 255, 0.507) !important;
+}
+
+.footer .container[b-gaz5zh1u1q]{
+  color: aliceblue !important;
 }

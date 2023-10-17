@@ -13,4 +13,5 @@ public class Temporada
         tituloTemporada = tituloT;
     }
 
+    public Temporada(){}
 }

@@ -29,7 +29,12 @@ public class HomeController : Controller
     {
         List<Temporada> temporadas = BD.ObtenerTemporadas(idSerie);
         return temporadas;
-    }  
+    }
+
+    public Serie VerSeriesAjax(int idSerie)
+    {
+        return BD.ObtenerSerie(idSerie);
+    }
 
     public IActionResult Privacy()
     {
